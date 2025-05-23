@@ -32,8 +32,8 @@ export default function SplashScreen() {
                     transform: [{scale: scaleAnim}]
                 }
             ]}>
-            <Ionicons name="medkit" size={100} color="white" />
-            <Text>        Medo</Text>
+            <Ionicons name="medkit" size={100} color="#4f9add" />
+            <Text style={styles.appName}>Medo</Text>
             </Animated.View>
         
     </View>
@@ -45,15 +45,22 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#0a7ea4',
+        backgroundColor: '#f8faf2',
     },
 
     iconContainer: {
-        color: 'white',
+        color: '#4f9add',
         fontSize: 32,
         fontWeight: 'bold',
         marginTop : 20,
         letterSpacing: 1,
 
     },
+    appName: {
+        color: '#4f9add',
+        fontSize: 36,
+        fontWeight: 'bold',
+        marginTop : 20,
+        letterSpacing: 1,
+    }
 });
